@@ -1,6 +1,18 @@
 # Szkolenie Julia - RID
 Repozytorium zawiera materiały do szkolenia **Wprowadzenie do Data Science i uczenia maszynowego z językiem Julia** przeprowadzonego w ramach Regionalnej Inicjatywy Doskonałości SGH.
 
+## Program ramowy
+1. Wprowadzenie do języka Julia
+2. Wirtualne środowisko i zarządzanie pakietami
+3. Podstawowe typy danych
+4. Przegląd operacji macierzowych i wektorowych
+5. Wektoryzacja kodu (dot operator)
+6. Praca z ramkami danych (DataFrames.jl, CSV.jl)
+7. Wizualizacja danych z biblioteką Plots.jl
+8. Generacja wykresów na potrzeby artykułów naukowych z PGFPlotsX.jl
+9. Wprowadzenie do uczenia maszynowego z Julia – MLJ.jl
+10. Uwagi o integracji z innymi językami programowania – Python oraz R
+
 ## Terminy spotkań:
 * 14.03.2025 14:00-16:30 MS Teams
 * 21.03.2025 14:00-16:30 MS Teams
