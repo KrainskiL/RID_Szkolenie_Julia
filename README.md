@@ -1,49 +1,57 @@
-# Szkolenie Julia - RID
-Repozytorium zawiera materiały do szkolenia **Wprowadzenie do Data Science i uczenia maszynowego z językiem Julia** przeprowadzonego w ramach Regionalnej Inicjatywy Doskonałości SGH.
+# Julia Training - RID
+The repository contains materials for the training **Introduction to Data Science and Machine Learning with Julia** conducted as part of the SGH Regional Excellence Initiative.
 
-## Program ramowy
-1. Wprowadzenie do języka Julia
-2. Wirtualne środowisko i zarządzanie pakietami
-3. Podstawowe typy danych
-4. Przegląd operacji macierzowych i wektorowych
-5. Wektoryzacja kodu (dot operator)
-6. Praca z ramkami danych (DataFrames.jl, CSV.jl)
-7. Wizualizacja danych z biblioteką Plots.jl
-8. Generacja wykresów na potrzeby artykułów naukowych z PGFPlotsX.jl
-9. Wprowadzenie do uczenia maszynowego z Julia – MLJ.jl
-10. Uwagi o integracji z innymi językami programowania – Python oraz R
+## Agenda
+1. Introduction to Julia
+2. Virtual Environment and Package Management
+3. Basic Data Types
+4. Overview of Matrix and Vector Operations
+5. Vectorization of Code (dot operator)
+6. Working with Data Frames (DataFrames.jl, CSV.jl)
+7. Data Visualization with Plots.jl Library
+8. Generating Plots for Scientific Papers with PGFPlotsX.jl
+9. Introduction to Machine Learning with Julia – MLJ.jl
+10. Notes on Integration with Other Programming Languages ​​– Python and R
 
-## Terminy spotkań:
+## Meetings
 * 14.03.2025 14:00-16:30 MS Teams
 * 21.03.2025 14:00-16:30 MS Teams
 
-## Instrukcja przygotowania środowiska
+## Environment setup
 
-1. Zainstaluj [Julię](https://julialang.org/downloads/). Polecana jest instalacja bez uprawnień administratora (instalacja dla aktywnego użytkownika). W trakcie szkolenia będziemy korzystać z wersji **v1.11.4**.
-2. Pobierz materiały:
-    * Pobierz archiwum poprzez zielony przycisk `Code` -> `Download zip` i rozpakuj je w łatwo dostępnej lokalizacji LUB
-    * Sklonuj repozytorium korzystając w terminalu z komendy `git clone https://github.com/KrainskiL/RID_Szkolenie_Julia`
-3. Otwórz terminal i upewnij się że ścieżka robocza jest w folderze głównym pobranego repozytorium.
-4. Uruchom Julię komendą `julia`. Jeśli pojawia się błąd dotyczący braku zainstalowanej aplikacji, sprawdź czy Julia znajduje się w [zmiennej środowiskowej PATH](https://julialang.org/downloads/platform/).
-5. Po uruchomieniu REPL Julii wpisz następujące komendy:
+1. Install [Julia](https://julialang.org/downloads/). It is recommended to install without administrator privileges (installation for active user). During the training we will use version **v1.11.4**.
+2. Download materials:
+    * Download the archive via the green button `Code` -> `Download zip` and unpack it in an easily accessible location OR
+    * Clone the repository using the command `git clone https://github.com/KrainskiL/RID_Szkolenie_Julia` in the terminal
+3. Open terminal and make sure the working path is in the root folder of the downloaded repository.
+```bash
+cd RID_Szkolenie_Julia # or cd RID_Szkolenie_Julia-main
+```
+4. Start Julia with the `julia` command. If you get an error about the application not being installed, check if Julia is in your [PATH environment variable](https://julialang.org/downloads/platform/).
+5. Once you have launched Julia's REPL, type the following commands:
 ```julia
 using Pkg
-pkg"activate ." # uruchomienie wirtualnego środowiska
-pkg"instantiate"   # instalacja wymaganych pakietów.
+pkg"activate ." # activating virtual environment
+pkg"instantiate"   # installation of required packages
 ```
-6. Zainstaluj środowisko notatnika korzystając z IJulii (komendy w REPL Julii):
+6. Install the notebook environment using IJulia (commands in Julia REPL):
 ```julia
 using IJulia
 notebook(dir=".")
-# Zaakceptuj instalację wpisując Y
+# Accept with Y
 ```
-Jeżeli Jupyter był już zainstalowany na maszynie, krok 6. można pominąć - po kroku 5. kernel Julii powinien być dostępny w interfejsie Jupyter.
+If Jupyter was already installed on the machine, step 6 can be skipped - after step 5, the Julia kernel should be available in the Jupyter interface.
+
+## Latex
+
+To properly run `3_Plots_Latex.ipynb` notebook, you'll need Latex distribution installed e.g. [TexLive](https://www.tug.org/texlive/) or [MikTex](https://miktex.org/download). 
+
 
 ## Visual Studio Code
 
-Alternatywnym sposobem pracy z materiałami szkoleniowymi jest IDE [Visual Studio Code](https://code.visualstudio.com/). Do pracy z Julią zalecane jest zainstalowanie [oficjalnej wtyczki](https://github.com/julia-vscode/julia-vscode). VS Code zapewnia dedykowany edytor notatników i wiele funkcji przydatnych w tworzeniu oraz testowaniu kodu źródłowego. ⚠️UWAGA! Niewielka część komend w notatnikach może nie działać poprawnie w środowisku VS Code.
+An alternative way to work with training materials is the IDE [Visual Studio Code](https://code.visualstudio.com/). To work with Julia, it is recommended to install the [official plugin](https://github.com/julia-vscode/julia-vscode). VS Code provides a dedicated notebook editor and many features useful in creating and testing source code. ⚠️ A small part of the notebook commands may not work correctly in the VS Code environment.
 
-## Materiały dodatkowe
+## Additional materials
 
 [Julia Academy](https://juliaacademy.com/)
 
